@@ -1,5 +1,6 @@
 # K-R-C-ex2.1
 Answer (partial) to the K&amp;R (2nd edition) exercise 2.1
+
 This program show the minimum and maximum values of different types.
 Types are:
 -char;
