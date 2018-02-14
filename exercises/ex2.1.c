@@ -2,27 +2,29 @@
 #include <limits.h>
 #include <float.h>
 
-/*	program to determine the ranges of types "char", "short",
-	"int", and "long", both "signed" and "unsigned" from
-	standard "<limints.h>" and types "float", "double", 
-	and "long double" from "<float.h>" headers.
-	
-	And compute ranges of the floating-point types.
-	Integers is more or less trivial to compute (compute 
-	version not included here).
-	
-	From K&R (non exact citation):
-	Sizes of the floating-point objects are implementation-defined. 
-	So the sizes of "float", "double", and "long double" could 
-	represent one, two or three distinct sizes.
-	
-	If the previous statement hold true nowadays, calculated values 
-	floating-point types would fail (at least for some types) on 
-	some platforms.
+// This is a partial solution. Read the description below.
+
+/*  program to determine the ranges of types "char", "short",
+	  "int", and "long", both "signed" and "unsigned" from
+	  standard "<limints.h>" and types "float", "double", 
+    and "long double" from "<float.h>" headers.
+
+    And compute ranges of the floating-point types.
+    Integers is more or less trivial to compute (compute 
+    version not included here).
+
+    From K&R (non exact citation):
+    Sizes of the floating-point objects are implementation-defined. 
+    So the sizes of "float", "double", and "long double" could 
+    represent one, two or three distinct sizes.
+
+    If the previous statement hold true nowadays, calculated values 
+    floating-point types would fail (at least for some types) on 
+    some platforms.
 */
 /*	Useful site to visualize IEEE-754 single precision
-	floating-point number:
-	https://www.h-schmidt.net/FloatConverter/IEEE754.html
+    floating-point number:
+    https://www.h-schmidt.net/FloatConverter/IEEE754.html
 */
 
 int main()
@@ -138,5 +140,3 @@ int main()
 
 	return 0;
 }
-	
-	
